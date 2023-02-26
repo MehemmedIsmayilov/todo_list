@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(107, 107, 206);
+    text-align: center;
+    padding: 10% 30%; 
+}
+.box{
+    width: 800px;
+    height: 500px;
+    background-color: rgb(6, 6, 136);
+    color: white;
+    border-radius: 30px ;
+    padding: 90px;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.input{
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+    padding: 0px 10px;
+    border: none;
+    
+}
+.add_task{
+    width: 90px;
+    height: 50px;
+    
+    font-size: 20px;
+    background-color: rgb(241, 94, 94);
+    color: white;
+    border: none;
+}
+.cvb_sil{
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    margin: 50px 70px;
+}
+td{
+    font-size: 26px;
+}
+.delete{
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+    
+}
