@@ -1,40 +1,25 @@
 let button = document.querySelector(".add_task");
-let delet = document.querySelector(".delete");
 
-let listArr = [];
-class list {
-  constructor(input, button, delet) {
-    this.input = input;
-    this.button = button;
-    this.delet = delet;
-  }
-}
+let input = document.querySelector(".input");
 
-function addList() {
-  let input = document.querySelector(".input").value;
-  let tbody = document.querySelector(".tbody");
+let ull = document.querySelector(".ull");
 
-  let newList = new list(input);
-  listArr.push(newList);
-  listArr.map((list_get) => {
-    tbody.innerHTML += `
-<li>${list_get.input}</li>  
 
-`;
+button.addEventListener("click",() => {
+  ull.innerHTML += `<li class="word">${input.value}<button class="dltbtn">Delete</button></li>`;
+  let word = document.querySelector(".word");
+  let dltbtn = document.querySelector(".dltbtn");
+
+  dltbtn.addEventListener("click", () => {
+    word.remove();
   });
-}
+});
 
-button.addEventListener("click", addList);
-
-
-
-delet.addEventListener("click",function(){
-  const indexToDelete=2;
-  listArr.splice(indexToDelete,1);
-})
+// delet.addEventListener("click",function(e){
+//   const indexToDelete=2;
+//   listArr.splice(indexToDelete,1);
+// })
 // delet.addEventListener("click",()=>{
 //   let newListt=new list(input)
 //   listArr.pop(newListt)
 // })
-
-// delet.addEventListener("click",delete listArr[1])
